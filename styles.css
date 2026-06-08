@@ -804,12 +804,15 @@ textarea {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  color: var(--white);
-  background: var(--green);
+  background: #25d366;
   border: 4px solid rgba(255, 255, 255, 0.82);
   box-shadow: 0 14px 28px rgba(18, 63, 82, 0.22);
-  font-size: 0.86rem;
-  font-weight: 900;
+}
+
+.floating-whatsapp svg {
+  width: 34px;
+  height: 34px;
+  fill: #ffffff;
 }
 
 /* GALLERY AND ALBUM PAGES */
