@@ -39,13 +39,20 @@ const galleryAlbums = {
     ]
   },
 
- "funny-moments": {
+"funny-moments": {
   title: "Funny Moments",
   folder: "assets/gallery/funny-moments/",
   description: "Cute, funny, and happy little moments from our daycare.",
   images: [
     "funny-1.jpg",
-    "funny-2.jpg"
+    "funny-2.jpg",
+    "funny-3.jpg",
+    "funny-4.jpg",
+    "funny-5.jpg",
+    "funny-6.jpg",
+    "funny-7.jpg",
+    "funny-8.jpg",
+    "funny-9.jpg"
   ]
 },
 
