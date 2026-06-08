@@ -42,6 +42,8 @@ a {
   text-decoration: none;
 }
 
+/* HEADER */
+
 .site-header {
   position: fixed;
   top: 0;
@@ -157,6 +159,8 @@ a {
   background: var(--blue-soft);
   outline: none;
 }
+
+/* HERO */
 
 .hero {
   position: relative;
@@ -279,6 +283,8 @@ a {
   color: var(--teal);
 }
 
+/* TEXT */
+
 h1,
 h2,
 h3,
@@ -329,6 +335,8 @@ h3 {
   font-weight: 800;
 }
 
+/* BUTTONS */
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -362,6 +370,8 @@ h3 {
   border: 2px solid rgba(27, 92, 114, 0.2);
 }
 
+/* SECTIONS */
+
 .section {
   position: relative;
   overflow: hidden;
@@ -391,6 +401,8 @@ h3 {
   max-width: 680px;
 }
 
+/* ABOUT IMAGE */
+
 .about-image {
   display: grid;
   gap: 12px;
@@ -418,7 +430,6 @@ h3 {
   display: block;
 }
 
-
 .about-image strong {
   color: var(--teal);
   font-family: "Fredoka", "Nunito", sans-serif;
@@ -437,6 +448,8 @@ h3 {
   font-size: 1.08rem;
   font-weight: 700;
 }
+
+/* CARDS */
 
 .card-grid,
 .details-grid,
@@ -525,6 +538,8 @@ h3 {
   font-weight: 700;
 }
 
+/* LEARNING */
+
 .learning-list div {
   padding: 0 0 20px;
   border-bottom: 2px dashed rgba(27, 92, 114, 0.18);
@@ -540,6 +555,8 @@ h3 {
   object-position: center;
   box-shadow: var(--shadow);
 }
+
+/* REVIEWS */
 
 .reviews-section {
   background:
@@ -639,6 +656,8 @@ h3 {
   gap: 12px;
 }
 
+/* DETAILS AND CONTACT */
+
 .details-grid article {
   padding: 22px;
 }
@@ -727,6 +746,8 @@ textarea {
   margin-top: 4px;
 }
 
+/* FOOTER */
+
 .site-footer {
   padding: 24px 20px 92px;
   color: rgba(255, 255, 255, 0.84);
@@ -755,6 +776,96 @@ textarea {
   font-size: 0.86rem;
   font-weight: 900;
 }
+
+/* GALLERY AND ALBUM PAGES */
+
+.gallery-hero {
+  padding-top: 118px;
+  background: var(--pink-soft);
+}
+
+.gallery-hero h1 {
+  max-width: 720px;
+  font-size: clamp(2.6rem, 9vw, 4.8rem);
+}
+
+.gallery-hero p:not(.eyebrow) {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.gallery-section {
+  background: #fffafd;
+}
+
+.album-grid,
+.gallery-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.album-card,
+.gallery-card {
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.78);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: var(--shadow);
+}
+
+.album-card {
+  display: grid;
+  color: var(--teal-dark);
+}
+
+.album-card img,
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.25s ease;
+}
+
+.album-card:hover img,
+.gallery-card:hover img {
+  transform: scale(1.04);
+}
+
+.album-card div {
+  padding: 18px;
+}
+
+.album-card span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--coral);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.album-card h2 {
+  margin: 0;
+  color: var(--teal);
+  font-size: 1.6rem;
+}
+
+.album-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.gallery-contact {
+  background: var(--blue-soft);
+}
+
+/* TABLET AND DESKTOP */
 
 @media (min-width: 760px) {
   .site-header {
@@ -848,7 +959,9 @@ textarea {
   .card-grid,
   .details-grid,
   .learning-list,
-  .review-list {
+  .review-list,
+  .album-grid,
+  .gallery-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
   }
@@ -879,6 +992,15 @@ textarea {
 
   .contact-form {
     padding: 24px;
+  }
+
+  .gallery-hero {
+    padding-top: 150px;
+  }
+
+  .album-card img,
+  .gallery-card img {
+    aspect-ratio: 1;
   }
 
   .site-footer {
