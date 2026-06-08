@@ -29,15 +29,22 @@ const galleryAlbums = {
   ]
 },
 
-  activities: {
-    title: "Activities",
-    folder: "assets/gallery/activities/",
-    description: "Creative play, group work, and fun activities.",
-    images: [
-      "activity-1.jpg",
-      "activity-2.jpg"
-    ]
-  },
+activities: {
+  title: "Activities",
+  folder: "assets/gallery/activities/",
+  description: "Creative play, group work, and fun activities.",
+  images: [
+    "activity-1.jpg",
+    "activity-2.jpg",
+    "activity-3.jpg",
+    "activity-4.jpg",
+    "activity-5.jpg",
+    "activity-6.jpg",
+    "activity-7.jpg",
+    "activity-8.jpg",
+    "activity-9.jpg"
+  ]
+},
 
 "funny-moments": {
   title: "Funny Moments",
@@ -72,8 +79,7 @@ birthdays: {
     "birthday-9.jpg",
     "birthday-10.jpg",
     "birthday-11.jpg",
-    "birthday-12.jpg",
-    "birthday-13.jpg"
+    "birthday-12.jpg"
   ]
 },
 
