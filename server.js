@@ -6,7 +6,16 @@ const root = __dirname;
 const port = Number(process.env.PORT || 4173);
 const cacheTtl = 1000 * 60 * 60 * 6;
 
-const publicFiles = new Set(["/index.html", "/styles.css", "/script.js"]);
+const publicFiles = new Set([
+  "/index.html",
+  "/gallery.html",
+  "/album.html",
+  "/styles.css",
+  "/script.js",
+  "/gallery-data.js",
+  "/album.js"
+]);
+
 const mimeTypes = {
   ".css": "text/css",
   ".html": "text/html",
@@ -15,6 +24,7 @@ const mimeTypes = {
   ".jpeg": "image/jpeg",
   ".png": "image/png",
   ".webp": "image/webp",
+  ".svg": "image/svg+xml",
 };
 
 let reviewCache = null;
@@ -130,6 +140,7 @@ const serveStatic = (request, response) => {
     response.writeHead(200, {
       "Content-Type": mimeTypes[path.extname(resolvedPath)] || "application/octet-stream",
     });
+
     response.end(content);
   });
 };
