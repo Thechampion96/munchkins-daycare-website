@@ -401,52 +401,87 @@ h3 {
   max-width: 680px;
 }
 
-/* ABOUT IMAGE */
+/* ABOUT SECTION */
 
-.about-image {
+.about-section {
+  background: var(--pink-soft);
+}
+
+.about-layout {
   display: grid;
-  gap: 12px;
-  width: min(320px, 78vw);
-  margin-top: 28px;
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.72);
-  border: 3px solid rgba(255, 255, 255, 0.78);
-  border-radius: 18px;
+  gap: 28px;
+  align-items: center;
+}
+
+.about-visual {
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.78);
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.74);
   box-shadow: var(--shadow);
 }
 
-.about-image img {
+.about-visual img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  height: auto;
+  aspect-ratio: 1.05;
   object-fit: cover;
   object-position: center top;
-  border-radius: 14px;
-  background: var(--blue-soft);
 }
 
-.about-image strong,
-.about-image span {
-  display: block;
+.about-content h2 {
+  max-width: 680px;
+  margin-bottom: 28px;
 }
 
-.about-image strong {
+.about-points {
+  display: grid;
+  gap: 30px;
+}
+
+.about-point {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.about-point span {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
   color: var(--teal);
-  font-family: "Fredoka", "Nunito", sans-serif;
-  font-size: 1.2rem;
-}
-
-.about-image span {
-  color: var(--muted);
-  font-weight: 800;
-}
-
-.section-copy p,
-.section-heading p,
-.contact-intro > p {
-  color: var(--muted);
-  font-size: 1.08rem;
+  border: 4px solid var(--teal);
+  border-radius: 50%;
+  font-size: 2.6rem;
   font-weight: 700;
+  line-height: 1;
+}
+
+.about-point p {
+  margin: 0;
+  color: var(--teal-dark);
+  font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(1.15rem, 2.4vw, 1.8rem);
+  font-weight: 400;
+  line-height: 1.55;
+}
+@media (min-width: 760px) {
+  .about-layout {
+    grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
+    gap: 48px;
+  }
+
+  .about-point {
+    grid-template-columns: 64px 1fr;
+    gap: 24px;
+  }
+
+  .about-point span {
+    width: 64px;
+    height: 64px;
+    font-size: 2.3rem;
+  }
 }
 
 /* CARDS */
