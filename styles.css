@@ -1250,3 +1250,28 @@ textarea {
     margin-right: auto !important;
   }
 }
+
+/* FIX DATE INPUT OVERFLOW ON MOBILE */
+input,
+select,
+textarea {
+  max-width: 100%;
+  min-width: 0;
+}
+
+input[type="date"] {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  text-align: left;
+  line-height: 1.2;
+}
+
+@media (max-width: 760px) {
+  input[type="date"] {
+    font-size: 1rem;
+    padding: 14px 13px;
+  }
+}
