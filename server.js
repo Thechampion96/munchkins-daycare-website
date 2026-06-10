@@ -10,13 +10,13 @@ const publicFiles = new Set([
   "/index.html",
   "/gallery.html",
   "/album.html",
+  "/help.html",
   "/styles.css",
   "/script.js",
   "/gallery-data.js",
   "/album.js",
-  "/favicon.ico",
-  "/robots.txt",
-  "/sitemap.xml"
+  "/help-data.js",
+  "/help.js"
 ]);
 
 const mimeTypes = {
