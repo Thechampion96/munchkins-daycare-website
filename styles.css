@@ -1445,6 +1445,38 @@ input[type="date"] {
   font-weight: 700;
 }
 
+.help-contact {
+  padding-top: 18px;
+  background: #fffafd;
+}
+
+.help-contact-card {
+  display: grid;
+  gap: 22px;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(255, 239, 249, 0.92), rgba(225, 246, 240, 0.9));
+  box-shadow: var(--shadow);
+}
+
+.help-contact-card h2 {
+  margin: 0;
+  color: var(--teal);
+  font-size: clamp(2rem, 8vw, 3.4rem);
+}
+
+.help-contact-card p:not(.eyebrow) {
+  max-width: 640px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.help-contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 @media (min-width: 760px) {
   .help-hero {
     padding-top: 150px;
@@ -1452,6 +1484,15 @@ input[type="date"] {
 
   .help-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .help-contact-card {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+  }
+
+  .help-contact-actions {
+    justify-content: flex-end;
   }
 }
 
@@ -1482,5 +1523,17 @@ input[type="date"] {
 
   .help-section {
     padding-top: 18px !important;
+  }
+
+  .help-contact {
+    padding-top: 8px !important;
+  }
+
+  .help-contact-card {
+    text-align: center;
+  }
+
+  .help-contact-actions {
+    justify-content: center;
   }
 }
