@@ -1,5 +1,4 @@
 :root {
-  color-scheme: light;
   --pink: #f3cce7;
   --pink-soft: #fde7f4;
   --blue: #8dcced;
@@ -895,67 +894,6 @@ textarea {
 
 .gallery-contact {
   background: var(--blue-soft);
-}
-
-/* DARK MODE */
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --pink: #43283c;
-    --pink-soft: #2b1f29;
-    --blue: #2f6578;
-    --blue-soft: #172b34;
-    --teal: #9bd5e2;
-    --teal-dark: #eef9fb;
-    --yellow: #f4c85f;
-    --coral: #ff9f93;
-    --orange: #ffc06a;
-    --green: #63d28c;
-    --white: #13262e;
-    --muted: #b7cdd5;
-    --line: rgba(201, 231, 239, 0.18);
-    --shadow: 0 18px 38px rgba(0, 0, 0, 0.34);
-  }
-
-  body,
-  .section,
-  .gallery-section {
-    background: #101b21;
-  }
-
-  .site-header {
-    background: rgba(16, 27, 33, 0.34);
-  }
-
-  .site-nav,
-  .info-card,
-  .details-grid article,
-  .contact-form,
-  .rating-summary,
-  .review-card,
-  .album-card,
-  .gallery-card,
-  .about-visual {
-    background: rgba(19, 38, 46, 0.82);
-    border-color: rgba(201, 231, 239, 0.14);
-  }
-
-  .button.secondary {
-    background: rgba(19, 38, 46, 0.64);
-    border-color: rgba(201, 231, 239, 0.22);
-  }
-
-  input,
-  select,
-  textarea {
-    background-color: #101b21;
-    border-color: rgba(201, 231, 239, 0.22);
-  }
-
-  .floating-whatsapp {
-    border-color: rgba(255, 255, 255, 0.22);
-  }
 }
 
 /* TABLET AND DESKTOP */
