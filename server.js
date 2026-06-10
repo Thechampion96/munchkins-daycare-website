@@ -13,18 +13,24 @@ const publicFiles = new Set([
   "/styles.css",
   "/script.js",
   "/gallery-data.js",
-  "/album.js"
+  "/album.js",
+  "/favicon.ico",
+  "/robots.txt",
+  "/sitemap.xml"
 ]);
 
 const mimeTypes = {
   ".css": "text/css",
   ".html": "text/html",
+  ".ico": "image/x-icon",
   ".js": "text/javascript",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".png": "image/png",
   ".webp": "image/webp",
   ".svg": "image/svg+xml",
+  ".txt": "text/plain",
+  ".xml": "application/xml",
 };
 
 let reviewCache = null;

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://munchkinsdaycare.co.za/sitemap.xml
