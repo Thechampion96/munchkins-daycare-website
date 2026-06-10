@@ -292,6 +292,10 @@ h1 {
   text-align: center;
 }
 
+.headline-desktop {
+  display: none;
+}
+
 h2 {
   font-size: clamp(2.2rem, 8vw, 3.4rem);
   font-weight: 700;
@@ -971,6 +975,18 @@ textarea {
 
   h1 {
     font-size: clamp(4.2rem, 6.4vw, 6.1rem);
+  }
+
+  .hero h1 {
+    text-align: left;
+  }
+
+  .headline-mobile {
+    display: none;
+  }
+
+  .headline-desktop {
+    display: inline;
   }
 
   .hero p:not(.eyebrow) {
